@@ -118,12 +118,14 @@ body {
     padding: 0 0 0 0; }
     .results-body-left {
       width: 50%;
-      padding-right: 1rem; }
+      padding-right: 1.5%; }
       @media (max-width: 850px) {
         .results-body-left {
           width: 100%; } }
       .results-body-left .people {
-        max-height: 100% !important; }
+        max-height: 100% !important;
+        border: 1.5px solid #EAEBEE;
+        border-radius: 4px; }
         .results-body-left .people .card-header {
           padding: 2.3rem; }
           .results-body-left .people .card-header h3 {
@@ -133,16 +135,16 @@ body {
           .results-body-left .people .card-header .add-btn {
             display: inline-block;
             position: relative;
-            width: 3rem;
-            height: 3rem;
+            width: 29px;
+            height: 29px;
             border: 1.5px solid #0087ff;
             border-radius: 50%;
             cursor: pointer; }
             .results-body-left .people .card-header .add-btn::before {
               content: "";
               position: absolute;
-              width: 1rem;
-              height: 0.2rem;
+              width: 10px;
+              height: 2px;
               background-color: #0087ff;
               top: 50%;
               left: 50%;
@@ -150,14 +152,14 @@ body {
             .results-body-left .people .card-header .add-btn::after {
               content: "";
               position: absolute;
-              width: 0.2rem;
-              height: 1rem;
+              width: 2px;
+              height: 10px;
               background-color: #0087ff;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
         .results-body-left .people .list-group-flush {
-          height: calc(100vh - 17rem - 7.6rem);
+          max-height: calc(100vh - 17rem - 7.6rem);
           overflow-y: scroll;
           overflow-x: hidden;
           -ms-overflow-style: none;
@@ -210,26 +212,27 @@ body {
           display: none; } }
       .results-body-right-top {
         height: 50%;
-        margin-bottom: 1rem; }
-        @media (max-height: 750px) {
+        margin-bottom: 3%; }
+        @media (max-height: 600px) {
           .results-body-right-top {
             height: calc(50% + 8.3rem); } }
-        @media (max-height: 600px) {
+        @media (max-height: 480px) {
           .results-body-right-top {
             height: 100%;
             margin-bottom: 0; } }
         .results-body-right-top .graph-card {
           width: 100%;
           height: 100%;
-          border-radius: 4px;
-          border: solid 1.5px #eaebee; }
+          border: 1.5px solid #EAEBEE;
+          border-radius: 4px; }
           .results-body-right-top .graph-card-header {
             padding: 1.8rem;
-            padding-bottom: 0; }
+            padding-bottom: 2%; }
             .results-body-right-top .graph-card-header h3 {
               font-size: 2.3rem;
               font-weight: 400;
-              color: #1a173b; }
+              color: #1a173b;
+              padding-bottom: 2%; }
               .results-body-right-top .graph-card-header h3 span {
                 font-weight: 700; }
             .results-body-right-top .graph-card-header .choose {
@@ -244,10 +247,10 @@ body {
             justify-content: space-between;
             height: calc(100% - 9.9rem - 2.6rem);
             padding-left: 3rem;
-            padding-right: 3rem; }
+            padding-right: 3rem;
+            padding-bottom: 5%; }
             .results-body-right-top .graph-card-body .bar {
               position: relative;
-              padding-bottom: 4rem;
               width: 4%;
               height: auto;
               border-radius: 8px;
@@ -274,26 +277,24 @@ body {
                 position: absolute;
                 white-space: nowrap;
                 left: 0;
-                bottom: -4%;
-                font-size: 1.2rem;
-                font-weight: 700;
+                bottom: -5%;
+                font-size: 1.4rem;
+                font-weight: 400;
                 color: rgba(23, 23, 23, 0.6);
                 transform: translate(-15%, 100%); }
                 @media (max-width: 1199px) {
                   .results-body-right-top .graph-card-body .bar-info {
-                    font-size: 1rem; } }
-                @media (max-width: 991px) {
-                  .results-body-right-top .graph-card-body .bar-info {
-                    font-size: 1rem; } }
+                    font-size: 1.3rem; } }
                 @media (max-width: 767px) {
                   .results-body-right-top .graph-card-body .bar-info {
                     font-size: 1.2rem; } }
       .results-body-right-bottom {
-        height: calc(50% - 1rem); }
-        @media (max-height: 750px) {
+        border: 1.5px solid #EAEBEE;
+        border-radius: 4px; }
+        @media (max-height: 600px) {
           .results-body-right-bottom {
             height: calc(50% - 1rem - 8.3rem); } }
-        @media (max-height: 600px) {
+        @media (max-height: 480px) {
           .results-body-right-bottom {
             display: none; } }
         .results-body-right-bottom-header {
@@ -301,39 +302,40 @@ body {
           height: 8.3rem;
           padding: 0 2.7rem;
           width: 100%;
-          display: flex;
-          justify-content: space-between;
-          padding: 2.5rem 2rem; }
-          @media (max-height: 750px) {
+          align-items: center;
+          padding: 2.5rem 2rem;
+          border-bottom: 1.5px solid #EAEBEE; }
+          @media (max-height: 600px) {
             .results-body-right-bottom-header {
               display: none; } }
-          .results-body-right-bottom-header h3 {
+          .results-body-right-bottom-header .choose {
             font-size: 1.9rem;
-            font-weight: 700;
-            color: #1a173b; }
-          .results-body-right-bottom-header a {
+            margin-bottom: 0; }
+            .results-body-right-bottom-header .choose a {
+              color: #878590; }
+            .results-body-right-bottom-header .choose .active a {
+              font-weight: 700;
+              color: #1a173b; }
+        .results-body-right-bottom-body {
+          height: 100%; }
+          .results-body-right-bottom-body .list-group-flush {
+            max-height: calc(50vh - 9.9rem - 2.6rem - 6.7rem );
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */ }
+            .results-body-right-bottom-body .list-group-flush::-webkit-scrollbar {
+              display: none;
+              /* Safari and Chrome */ }
+          .results-body-right-bottom-body .list-group-item {
+            padding: 1.5rem 2rem;
             font-size: 1.4rem;
-            white-space: nowrap; }
-            .results-body-right-bottom-header a i {
-              font-size: 1.8rem; }
-        .results-body-right-bottom-body .list-group-flush {
-          height: calc(50vh - 9.9rem - 2.6rem - 5.8rem);
-          overflow-y: scroll;
-          overflow-x: hidden;
-          -ms-overflow-style: none;
-          /* Internet Explorer 10+ */
-          scrollbar-width: none;
-          /* Firefox */ }
-          .results-body-right-bottom-body .list-group-flush::-webkit-scrollbar {
-            display: none;
-            /* Safari and Chrome */ }
-        .results-body-right-bottom-body .list-group-item {
-          padding: 1.5rem 2rem;
-          font-size: 1.4rem;
-          color: #2c2f34; }
-          @media (max-width: 1199px) {
-            .results-body-right-bottom-body .list-group-item {
-              padding: 1.35rem 1.8rem;
-              font-size: 1.26rem; } }
-          .results-body-right-bottom-body .list-group-item p {
-            width: 100%; }
+            color: #2c2f34; }
+            @media (max-width: 1199px) {
+              .results-body-right-bottom-body .list-group-item {
+                padding: 1.35rem 1.8rem;
+                font-size: 1.26rem; } }
+            .results-body-right-bottom-body .list-group-item p {
+              width: 100%; }
