@@ -235,6 +235,8 @@ body {
               padding-bottom: 2%; }
               .results-body-right-top .graph-card-header h3 span {
                 font-weight: 700; }
+            .results-body-right-top .graph-card-header a {
+              font-size: 1.7rem; }
             .results-body-right-top .graph-card-header .choose {
               font-size: 1.45rem; }
               .results-body-right-top .graph-card-header .choose a {
