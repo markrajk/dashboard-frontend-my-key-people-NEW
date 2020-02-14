@@ -255,8 +255,7 @@ body {
             padding-top: 1.2rem; }
             .results-body-right-top .graph-card-body .bar {
               position: relative;
-              width: 4%;
-              height: auto;
+              width: 2.4rem;
               border-radius: 8px;
               background-color: rgba(193, 192, 200, 0.24); }
               @media (max-width: 1199px) {
