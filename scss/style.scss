@@ -429,8 +429,12 @@ body {
             padding-bottom: 0;
             height: 10rem;
 
+            & .share {
+              font-size: 1.4rem;
+            }
+
             h3 {
-              font-size: 2.3rem;
+              font-size: 1.9rem;
               font-weight: 400;
               color: #1a173b;
               padding-bottom: 2%;
@@ -457,7 +461,7 @@ body {
             }
 
             & .choose {
-              font-size: 1.45rem;
+              font-size: 1.5rem;
 
               & a {
                 color: #878590;
@@ -474,10 +478,10 @@ body {
             display: flex;
             justify-content: space-between;
             //height: calc(100% - 9.9rem - 2.6rem);
-            height: calc(100% - 12.7rem);
+            height: calc(100% - 10rem);
             padding-left: 4.3rem;
             padding-right: 4.3rem;
-            padding-bottom: 2.5rem;
+            padding-bottom:5rem;
             padding-top: 1.2rem;
 
             & .bar {
