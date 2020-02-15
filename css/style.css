@@ -255,7 +255,7 @@ body {
               font-size: 1.9rem;
               font-weight: 400;
               color: #1a173b;
-              padding-bottom: 2%; }
+              margin-bottom: 1.8rem; }
               .results-body-right-top .graph-card-header h3 span {
                 font-weight: 700; }
             .results-body-right-top .graph-card-header a {
@@ -274,7 +274,7 @@ body {
             padding-left: 4.3rem;
             padding-right: 4.3rem;
             padding-bottom: 5rem;
-            padding-top: 1.2rem; }
+            padding-top: 2.2rem; }
             .results-body-right-top .graph-card-body .bar {
               position: relative;
               width: 2.4rem;

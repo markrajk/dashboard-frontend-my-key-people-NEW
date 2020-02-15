@@ -437,7 +437,8 @@ body {
               font-size: 1.9rem;
               font-weight: 400;
               color: #1a173b;
-              padding-bottom: 2%;
+              //padding-bottom: 2%;
+              margin-bottom: 1.8rem;
 
             //   @include respond-v(desktop-sm) {
             //       padding-bottom: 1rem;
@@ -482,7 +483,7 @@ body {
             padding-left: 4.3rem;
             padding-right: 4.3rem;
             padding-bottom:5rem;
-            padding-top: 1.2rem;
+            padding-top: 2.2rem;
 
             & .bar {
               position: relative;
