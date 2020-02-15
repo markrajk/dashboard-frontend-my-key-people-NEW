@@ -257,6 +257,18 @@ body {
         color: #1a173b;
       }
     }
+
+    & button {
+      height: 3.5rem;
+      padding: 0 1.7rem;
+      font-size: 1.4rem;
+      color: #FFF;
+      //line-height: 3.5;
+      background-color: #0077FF;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
   }
 
   &-body {
@@ -290,10 +302,51 @@ body {
             color: #1a173b;
           }
 
-          & i {
-            font-size: 4rem;
-            //margin-bottom: -.2rem;
-          }
+          // & i {
+          //   font-size: 4rem;
+          //   //margin-bottom: -.2rem;
+          // }
+
+          & .add-btn {
+            display: inline-block;
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border: 1.5px solid #0087FF;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                background-color: #0087FF;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 10px;
+                background-color: #0087FF;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+
+          //   &::after {
+          //     content: "\002B";
+          //     position: absolute;
+          //     color: #0087FF;
+          //     top: 50%;
+          //     left:50%;
+          //     transform: translate(-50%,-50%);
+          // }
+        }
 
           // & .add-btn {
           //   display: inline-block;
