@@ -226,6 +226,8 @@ body {
             height: 10rem; }
             .results-body-right-top .graph-card-header .share {
               font-size: 1.4rem; }
+              .results-body-right-top .graph-card-header .share i {
+                margin-top: -.15rem; }
             .results-body-right-top .graph-card-header h3 {
               font-size: 1.9rem;
               font-weight: 400;
@@ -314,6 +316,10 @@ body {
             .results-body-right-bottom-header .choose .active a {
               font-weight: 700;
               color: #1a173b; }
+          .results-body-right-bottom-header .share {
+            font-size: 1.4rem; }
+            .results-body-right-bottom-header .share i {
+              margin-top: -.15rem; }
         .results-body-right-bottom-body {
           height: calc(100% - 8.3rem); }
           @media (max-height: 600px) {

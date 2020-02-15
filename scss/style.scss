@@ -436,6 +436,10 @@ body {
 
             & .share {
               font-size: 1.4rem;
+
+              & i {
+                margin-top: -.15rem;
+              }
             }
 
             h3 {
@@ -595,6 +599,14 @@ body {
             & .active a {
               font-weight: 700;
               color: #1a173b;
+            }
+          }
+
+          & .share {
+            font-size: 1.4rem;
+
+            & i {
+              margin-top: -.15rem;
             }
           }
         }
