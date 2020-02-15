@@ -13,9 +13,8 @@
 </head>
 <body>
     <main class="d-flex">
-    <!-- SIDEBAR SECTION -->
-   <!-- SIDEBAR SECTION-->
-   <div class="sidebar d-flex flex-column bg-white">
+<!-- SIDEBAR SECTION-->
+<div class="sidebar d-flex flex-column bg-white">
     <div class="sidebar-info d-flex align-items-center">
         <img class="sidebar-info-img" src="img/profile-pic.png" alt="profile picture">
         <div class="d-flex flex-column">
@@ -32,7 +31,7 @@
     </div>
 
     <div class="sidebar-body">
-        <!-- <div class="sidebar-group">
+        <div class="sidebar-group">
             <h3>TEAMS</h3>
             <ul class="list-unstyled">
                 <li><a href="#">Results </a></li>
@@ -40,14 +39,14 @@
                 <li><a href="#">Manage teams </a></li>
                 <li><a href="#">Create a new team </a></li>
             </ul>
-        </div> -->
+        </div>
 
         <div class="sidebar-group">
             <h3>PEOPLE</h3>
             <ul class="list-unstyled">
-                <li><a href="#">Results </a></li>
+                <li class="active"><a href="#">Results </a></li>
                 <li><a href="#">Export results </a></li>
-                <li class="active"><a href="#">Manage people</a></li>
+                <li><a href="#">Manage people</a></li>
                 <li><a href="#">Invite new people </a></li>
             </ul>
         </div>
@@ -73,12 +72,20 @@
     <!-- RESULTS SECTION -->
     <div class="results">
         <div class="results-header">
-            <div class="logout col-12 d-flex align-items-center justify-content-end">
-                <a href="#">Logout <i class="material-icons md-18 align-middle">exit_to_app</i></a>
+            <div class="results-header-logout d-flex justify-content-between">
+                <p class="mb-0">People</p>
+                <p class="text-right align-middle"><a href="#">Logout</a> <i
+                        class="material-icons align-middle">exit_to_app</i></p>
             </div>
-    
-            <h2>Results</h2>
-            <p class="choose"><span>My key people |</span> All people</p>
+            <h2 class="mt-1 align-middle">Results</h2>
+            <p class="choose">My key people <span class="mx-1">|</span> <a href="#">All people</a></span></p>
+            <!-- <p class="choose"><span>My key people </span><span class="px-1">|</span> All people</p> -->
+            <!-- <div class="results-header-search">
+                <div class="input-group h-100">
+                    <i class="material-icons">search</i>
+                    <input class="m-auto" type="text" placeholder="Search...">
+                </div>
+            </div> -->
         </div>
 
         <div class="results-body">
@@ -205,7 +212,7 @@
                            <a class="share" href="#">Share<i class="material-icons align-middle">keyboard_arrow_down</i></a>
                         </div>
                         <div class="graph-card-body">
-                            <div class="bar d-none d-lg-block">
+                            <div class="bar d-none d-xl-block">
                                 <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
                                 <div class="bar-info">JAN</div>
                             </div>
@@ -257,49 +264,51 @@
                     </div>
                 </div>
 
-                <div class="results-body-right-bottom bg-white">
-                        <div class="results-body-right-bottom-header">
-                            <p class="choose"><span class="active"><a href="#">Improvement Ideas</a></span> <span class="mx-1">|</span><a href="#">Compliments</a></p>
+                <div class="results-body-right-bottom">
+                        <div class="right-container bg-white">
+                            <div class="results-body-right-bottom-header">
+                                <p class="choose"><span class="active"><a href="#">Improvement Ideas</a></span> <span class="mx-1">|</span><a href="#">Compliments</a></p>
+                            </div>
+                            <div class="results-body-right-bottom-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        I think the best solution is to kill our enemies first and then start our launch.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem, ipsum dolor.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="results-body-right-bottom-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    I think the best solution is to kill our enemies first and then start our launch.
-                                </p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
-                                </p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    Lorem ipsum dolor sit amet.
-                                </p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
-                                </p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
-                                </p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    Lorem, ipsum dolor.
-                                </p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="m-0 p-0">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>

@@ -208,38 +208,53 @@ body {
 .results {
   margin-left: 24.4rem;
   width: 100% !important;
-  //max-height: 100vh;
-  //padding: 1rem;
+  height: 100vh;
   font-family: "Lato", sans-serif;
   padding: 0 4.6rem 0 3.4rem;
 
   &-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17rem;
     padding-top: 4.1rem;
-    height: 14rem;
+    background-color: #f8f9fb;
 
-    & .logout {
+    &-logout {
+      height: 2rem;
+      margin: 0;
       font-size: 1.5rem;
-      & a {
-        font-weight: 600;
-        color: #6e747e;
+      font-weight: 600;
 
-        & i {
-          font-size: 1.8rem;
-        }
+      & a {
+        color: #6e747e;
+      }
+
+      & i {
+        margin-top: 0;
+        margin-left: -3px;
+        font-size: 1.8rem;
+        color: #6e747e;
       }
     }
 
     & h2 {
+      height: 3.7rem;
+      margin: 0;
       font-size: 2.7rem;
       font-weight: 600;
+      line-height: 1.37;
       color: #1a173b;
     }
 
     & .choose {
-      cursor: pointer;
+      margin: 2.2rem 0;
       font-size: 1.6rem;
-      & span {
+      color: #878590;
+      & a {
         font-weight: 700;
+        color: #1a173b;
       }
     }
   }
@@ -248,7 +263,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 0 0 0;
-    //overflow: hidden;
+    height: calc(100% - 20rem);
 
     &-left {
       width: 50%;
@@ -260,12 +275,14 @@ body {
        }
 
       .people {
-        max-height: 100% !important;
+        height: 100% !important;
         border: 1.5px solid #EAEBEE;
         border-radius: 4px;
+       
 
         & .card-header {
-          padding: 2.3rem;
+          height: 7.6rem;
+          padding: 0 2.3rem;
 
           & h3 {
             font-size: 1.9rem;
@@ -310,7 +327,8 @@ body {
           //max-height: calc(100% - 7.6rem);
           //height: 400px;
           //max-height: calc(100vh - 17rem -7.6rem);
-          max-height: calc(100vh - 17rem - 7.6rem);
+          //max-height: calc(100vh - 17rem - 7.6rem);
+          max-height: calc(100% - 7.6rem);
           overflow-y: scroll;
           overflow-x: hidden;
           -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -376,6 +394,7 @@ body {
 
     &-right {
       width: 50%;
+      height: 100%;
     //   display: flex;
     //   flex-direction: column;
       //margin-left: .5rem;
@@ -387,14 +406,14 @@ body {
 
       &-top {
         height: 50%;
-        margin-bottom: 3%;
+        padding-bottom: 1.5%;
         @include respond-v(desktop-sm) {
             height: calc(50% + 8.3rem);
           }
 
           @include respond-v(desktop-xsm) {
             height: 100%;
-            margin-bottom: 0;
+            padding-bottom: 0;
           }
         .graph-card {
           width: 100%;
@@ -408,6 +427,7 @@ body {
             padding-bottom: 2%;
             // margin-bottom: 0;
             padding-bottom: 0;
+            height: 10rem;
 
             h3 {
               font-size: 2.3rem;
@@ -453,7 +473,8 @@ body {
           &-body {
             display: flex;
             justify-content: space-between;
-            height: calc(100% - 9.9rem - 2.6rem);
+            //height: calc(100% - 9.9rem - 2.6rem);
+            height: calc(100% - 12.7rem);
             padding-left: 4.3rem;
             padding-right: 4.3rem;
             padding-bottom: 2.5rem;
@@ -462,7 +483,7 @@ body {
             & .bar {
               position: relative;
               width: 2.4rem;
-              border-radius: 8px;
+              border-radius: 5px;
               background-color: rgba($color: #c1c0c8, $alpha: 0.24);
 
               @include respond(desktop-lg) {
@@ -478,7 +499,7 @@ body {
                 position: absolute;
                 bottom: 0;
                 width: 100%;
-                border-radius: 8px;
+                border-radius: 5px;
 
                 &-green {
                   background: $green-gradient;
@@ -521,18 +542,25 @@ body {
       }
 
       &-bottom {
+        height: 50%;
+        padding-top: 1.5%;
+
+        & .right-container {
+          height: 100%;
+          border: 1.5px solid #EAEBEE;
+          border-radius: 4px;
+        }
+        
         @include respond-v(desktop-sm) {
-            height: calc(50% - 1rem - 8.3rem);
+            height: calc(50% - 8.3rem);
           }
 
           @include respond-v(desktop-xsm) {
             display: none;
           }
-          border: 1.5px solid #EAEBEE;
-          border-radius: 4px;
-
+         
         &-header {
-            display: flex;
+          display: flex;
           height: 8.3rem;
           padding: 0 2.7rem;
           width: 100%;
@@ -541,6 +569,7 @@ body {
         //   justify-content: space-between;
           padding: 2.5rem 2rem;
           border-bottom: 1.5px solid #EAEBEE;
+
           @include respond-v(desktop-sm) {
             display: none;
           }
@@ -561,16 +590,18 @@ body {
         }
 
         &-body {
-            height: 100%;
+            height: calc(100% - 8.3rem);
+
+            @include respond-v(desktop-sm) {
+              height: 100%;
+            }
 
           & .list-group-flush {
-            //max-height: calc(50vh - 9.9rem - 2.6rem - 7rem );
-            max-height: calc(50vh - 9.9rem - 2.6rem - 6.7rem );
+            height: 100%;
             overflow-y: scroll;
             overflow-x: hidden;
             -ms-overflow-style: none; /* Internet Explorer 10+ */
             scrollbar-width: none; /* Firefox */
-            //max-height: 32.15vh;
 
             &::-webkit-scrollbar {
               display: none; /* Safari and Chrome */
