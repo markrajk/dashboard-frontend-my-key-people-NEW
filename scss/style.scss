@@ -488,6 +488,7 @@ body {
             height: 10rem;
 
             & .share {
+              white-space: nowrap;
               font-size: 1.4rem;
 
               & i {
@@ -544,8 +545,8 @@ body {
             height: calc(100% - 10rem);
             padding-left: 4.3rem;
             padding-right: 4.3rem;
-            padding-bottom:4.7rem;
-            padding-top: .8rem;
+            padding-bottom:4.5rem;
+            padding-top: 1rem;
 
             & .bar {
               position: relative;
@@ -616,11 +617,13 @@ body {
           height: 100%;
           border: 1.5px solid #EAEBEE;
           border-radius: 4px;
+
+          @include respond-v(desktop-sm) {
+            height: calc(100% - 8.3rem);
+          }
         }
         
-        @include respond-v(desktop-sm) {
-            height: calc(50% - 8.3rem);
-          }
+        
 
           @include respond-v(desktop-xsm) {
             display: none;
@@ -656,6 +659,7 @@ body {
           }
 
           & .share {
+            white-space: nowrap;
             font-size: 1.4rem;
 
             & i {
@@ -667,9 +671,9 @@ body {
         &-body {
             height: calc(100% - 8.3rem);
 
-            @include respond-v(desktop-sm) {
-              height: 100%;
-            }
+            // @include respond-v(desktop-sm) {
+            //   height: 100%;
+            // }
 
           & .list-group-flush {
             height: 100%;

@@ -258,6 +258,7 @@ body {
             padding-bottom: 0;
             height: 10rem; }
             .results-body-right-top .graph-card-header .share {
+              white-space: nowrap;
               font-size: 1.4rem; }
               .results-body-right-top .graph-card-header .share i {
                 margin-top: -.15rem; }
@@ -283,8 +284,8 @@ body {
             height: calc(100% - 10rem);
             padding-left: 4.3rem;
             padding-right: 4.3rem;
-            padding-bottom: 4.7rem;
-            padding-top: .8rem; }
+            padding-bottom: 4.5rem;
+            padding-top: 1rem; }
             .results-body-right-top .graph-card-body .bar {
               position: relative;
               width: 4.76%;
@@ -324,9 +325,9 @@ body {
           height: 100%;
           border: 1.5px solid #EAEBEE;
           border-radius: 4px; }
-        @media (max-height: 600px) {
-          .results-body-right-bottom {
-            height: calc(50% - 8.3rem); } }
+          @media (max-height: 600px) {
+            .results-body-right-bottom .right-container {
+              height: calc(100% - 8.3rem); } }
         @media (max-height: 480px) {
           .results-body-right-bottom {
             display: none; } }
@@ -350,14 +351,12 @@ body {
               font-weight: 700;
               color: #1a173b; }
           .results-body-right-bottom-header .share {
+            white-space: nowrap;
             font-size: 1.4rem; }
             .results-body-right-bottom-header .share i {
               margin-top: -.15rem; }
         .results-body-right-bottom-body {
           height: calc(100% - 8.3rem); }
-          @media (max-height: 600px) {
-            .results-body-right-bottom-body {
-              height: 100%; } }
           .results-body-right-bottom-body .list-group-flush {
             height: 100%;
             overflow-y: scroll;
