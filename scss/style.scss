@@ -287,14 +287,19 @@ body {
        }
 
       .people {
+        height: auto;
         height: 100% !important;
-        border: 1.5px solid #EAEBEE;
-        border-radius: 4px;
+        //border: 1.5px solid #EAEBEE;
+        //border-radius: 4px;
        
 
         & .card-header {
           height: 7.6rem;
           padding: 0 2.3rem;
+          border: 1.5px solid #EAEBEE;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          border-bottom: none;
 
           & h3 {
             font-size: 1.9rem;
@@ -312,7 +317,7 @@ body {
             position: relative;
             width: 30px;
             height: 30px;
-            border: 1.5px solid #0087FF;
+            border: 1px solid #0087FF;
             border-radius: 50%;
             cursor: pointer;
 
@@ -337,48 +342,7 @@ body {
                 left:50%;
                 transform: translate(-50%,-50%);
             }
-
-          //   &::after {
-          //     content: "\002B";
-          //     position: absolute;
-          //     color: #0087FF;
-          //     top: 50%;
-          //     left:50%;
-          //     transform: translate(-50%,-50%);
-          // }
         }
-
-          // & .add-btn {
-          //   display: inline-block;
-          //   position: relative;
-          //   width: 29px;
-          //   height: 29px;
-          //   border: 1.5px solid #0087ff;
-          //   border-radius: 50%;
-          //   cursor: pointer;
-
-          //   &::before {
-          //     content: "";
-          //     position: absolute;
-          //     width: 10px;
-          //     height: 2px;
-          //     background-color: #0087ff;
-          //     top: 50%;
-          //     left: 50%;
-          //     transform: translate(-50%, -50%);
-          //   }
-
-          //   &::after {
-          //     content: "";
-          //     position: absolute;
-          //     width: 2px;
-          //     height: 10px;
-          //     background-color: #0087ff;
-          //     top: 50%;
-          //     left: 50%;
-          //     transform: translate(-50%, -50%);
-          //   }
-          // }
         }
 
         & .list-group-flush {
@@ -386,11 +350,15 @@ body {
           //height: 400px;
           //max-height: calc(100vh - 17rem -7.6rem);
           //max-height: calc(100vh - 17rem - 7.6rem);
+          //height: auto;
           max-height: calc(100% - 7.6rem);
           overflow-y: scroll;
           overflow-x: hidden;
           -ms-overflow-style: none; /* Internet Explorer 10+ */
           scrollbar-width: none; /* Firefox */
+          border: 1.5px solid #EAEBEE;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
 
           &::-webkit-scrollbar {
             display: none; /* Safari and Chrome */
@@ -525,10 +493,11 @@ body {
             }
 
             & .choose {
-              font-size: 1.5rem;
+              
 
               & a {
                 color: #878590;
+                font-size: 1.6rem;
               }
 
               & .active a {
@@ -615,8 +584,8 @@ body {
 
         & .right-container {
           height: 100%;
-          border: 1.5px solid #EAEBEE;
-          border-radius: 4px;
+          //border: 1.5px solid #EAEBEE;
+          //border-radius: 4px;
 
           @include respond-v(desktop-sm) {
             height: calc(100% - 8.3rem);
@@ -635,10 +604,15 @@ body {
           padding: 0 2.7rem;
           width: 100%;
           align-items: center;
+          justify-content: space-between;
+          background-color: #FFF;
         //   display: flex;
         //   justify-content: space-between;
           padding: 2.5rem 2rem;
-          border-bottom: 1.5px solid #EAEBEE;
+          border: 1.5px solid #EAEBEE;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          border-bottom: none;
 
           @include respond-v(desktop-sm) {
             display: none;
@@ -668,15 +642,35 @@ body {
           }
         }
 
+        & select {
+          //width: 6rem;
+          font-family: inherit;
+          border: none;
+          font-size: 1.4rem;
+          color: #007bff;
+          outline: none;
+        }
+
         &-body {
-            height: calc(100% - 8.3rem);
+            //max-height: calc(100% - 8.3rem);
+            height: 100%;
+            max-height: calc(100% - 8.3rem);
+
+            @include respond-v(desktop-sm) {
+              max-height: 100%;
+            }
+           
 
             // @include respond-v(desktop-sm) {
             //   height: 100%;
             // }
 
           & .list-group-flush {
-            height: 100%;
+            max-height: 100%;
+            border: 1.5px solid #EAEBEE;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            //@extend: 100%;
             overflow-y: scroll;
             overflow-x: hidden;
             -ms-overflow-style: none; /* Internet Explorer 10+ */
