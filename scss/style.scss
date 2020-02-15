@@ -290,37 +290,42 @@ body {
             color: #1a173b;
           }
 
-          & .add-btn {
-            display: inline-block;
-            position: relative;
-            width: 29px;
-            height: 29px;
-            border: 1.5px solid #0087ff;
-            border-radius: 50%;
-            cursor: pointer;
-
-            &::before {
-              content: "";
-              position: absolute;
-              width: 10px;
-              height: 2px;
-              background-color: #0087ff;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-
-            &::after {
-              content: "";
-              position: absolute;
-              width: 2px;
-              height: 10px;
-              background-color: #0087ff;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
+          & i {
+            font-size: 4rem;
+            //margin-bottom: -.2rem;
           }
+
+          // & .add-btn {
+          //   display: inline-block;
+          //   position: relative;
+          //   width: 29px;
+          //   height: 29px;
+          //   border: 1.5px solid #0087ff;
+          //   border-radius: 50%;
+          //   cursor: pointer;
+
+          //   &::before {
+          //     content: "";
+          //     position: absolute;
+          //     width: 10px;
+          //     height: 2px;
+          //     background-color: #0087ff;
+          //     top: 50%;
+          //     left: 50%;
+          //     transform: translate(-50%, -50%);
+          //   }
+
+          //   &::after {
+          //     content: "";
+          //     position: absolute;
+          //     width: 2px;
+          //     height: 10px;
+          //     background-color: #0087ff;
+          //     top: 50%;
+          //     left: 50%;
+          //     transform: translate(-50%, -50%);
+          //   }
+          // }
         }
 
         & .list-group-flush {
@@ -424,7 +429,7 @@ body {
 
           &-header {
             padding: 2.7rem;
-            padding-bottom: 2%;
+            //padding-bottom: 2%;
             // margin-bottom: 0;
             padding-bottom: 0;
             height: 10rem;
@@ -483,11 +488,11 @@ body {
             padding-left: 4.3rem;
             padding-right: 4.3rem;
             padding-bottom:5rem;
-            padding-top: 2.2rem;
+            padding-top: .5rem;
 
             & .bar {
               position: relative;
-              width: 2.4rem;
+              width: 4.76%;
               border-radius: 5px;
               background-color: rgba($color: #c1c0c8, $alpha: 0.24);
 
@@ -525,21 +530,21 @@ body {
                 white-space: nowrap;
                 left: 50%;
                 bottom: -1.1rem;
-                font-size: 1.4rem;
+                font-size: 1.25rem;
                 font-weight: 400;
                 color: rgba($color: #171717, $alpha: 0.6);
                 transform: translate(-50%, 100%);
-                @include respond(desktop-lg) {
-                  font-size: 1.3rem;
-                }
-
-                // @include respond(desktop-md) {
-                //   font-size: 1rem;
+                // @include respond(desktop-lg) {
+                //   font-size: 1.2rem;
                 // }
 
-                @include respond(desktop-sm) {
-                  font-size: 1.2rem;
-                }
+                // // @include respond(desktop-md) {
+                // //   font-size: 1rem;
+                // // }
+
+                // @include respond(desktop-sm) {
+                //   font-size: 1.2rem;
+                // }
               }
             }
           }

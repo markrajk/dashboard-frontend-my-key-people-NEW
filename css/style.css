@@ -150,32 +150,8 @@ body {
             font-size: 1.9rem;
             font-weight: 700;
             color: #1a173b; }
-          .results-body-left .people .card-header .add-btn {
-            display: inline-block;
-            position: relative;
-            width: 29px;
-            height: 29px;
-            border: 1.5px solid #0087ff;
-            border-radius: 50%;
-            cursor: pointer; }
-            .results-body-left .people .card-header .add-btn::before {
-              content: "";
-              position: absolute;
-              width: 10px;
-              height: 2px;
-              background-color: #0087ff;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); }
-            .results-body-left .people .card-header .add-btn::after {
-              content: "";
-              position: absolute;
-              width: 2px;
-              height: 10px;
-              background-color: #0087ff;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); }
+          .results-body-left .people .card-header i {
+            font-size: 4rem; }
         .results-body-left .people .list-group-flush {
           max-height: calc(100% - 7.6rem);
           overflow-y: scroll;
@@ -246,7 +222,6 @@ body {
           border-radius: 4px; }
           .results-body-right-top .graph-card-header {
             padding: 2.7rem;
-            padding-bottom: 2%;
             padding-bottom: 0;
             height: 10rem; }
             .results-body-right-top .graph-card-header .share {
@@ -274,10 +249,10 @@ body {
             padding-left: 4.3rem;
             padding-right: 4.3rem;
             padding-bottom: 5rem;
-            padding-top: 2.2rem; }
+            padding-top: .5rem; }
             .results-body-right-top .graph-card-body .bar {
               position: relative;
-              width: 2.4rem;
+              width: 4.76%;
               border-radius: 5px;
               background-color: rgba(193, 192, 200, 0.24); }
               @media (max-width: 1199px) {
@@ -303,16 +278,10 @@ body {
                 white-space: nowrap;
                 left: 50%;
                 bottom: -1.1rem;
-                font-size: 1.4rem;
+                font-size: 1.25rem;
                 font-weight: 400;
                 color: rgba(23, 23, 23, 0.6);
                 transform: translate(-50%, 100%); }
-                @media (max-width: 1199px) {
-                  .results-body-right-top .graph-card-body .bar-info {
-                    font-size: 1.3rem; } }
-                @media (max-width: 767px) {
-                  .results-body-right-top .graph-card-body .bar-info {
-                    font-size: 1.2rem; } }
       .results-body-right-bottom {
         height: 50%;
         padding-top: 1.5%; }
